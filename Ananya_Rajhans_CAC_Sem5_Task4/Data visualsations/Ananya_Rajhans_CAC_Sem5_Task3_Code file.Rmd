@@ -1,0 +1,569 @@
+---
+title: "Task 3: Data exploration"
+author: "Ananya Rajhans"
+date: '2023-11-07'
+output: html_document
+---
+#Importing Libraries
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggthemes)
+library(scales)
+library(moderndive)
+library(ggrepel)
+library(RColorBrewer)
+library(broom)
+library(corrplot)
+library(dplyr)
+library(ggplot2)
+library(GGally)
+library(tidyr)
+library(readr)
+d1<- read_csv("dataset1.csv")
+d2 <- read_csv("dataset2.csv")
+d3 <- read_csv("dataset3.csv")
+```
+
+
+# Introduction
+
+This R markdown file is made by Ananya Rajhans - UGPP year-3 as a part of TASK 3: Data Exploration for Summative Assessment ODD Semester 2023–24. The file contains explorations of 3 different data sets in order to make 3D data visualizations for analyzing the various factors that lead to Gender wage gap and correlating those to Globalization.
+
+
+# Data Set - 1
+
+This data set contains data of 25 countries between the years 1990 and 2021. It aims to provide a global perspective of Gender wage gap data and correlates it to Globalization. It also give insights about certain factors that lead to the wage gap, like, Male and Female literacy rates, Male and Female employment rates, GDP and population of a said country, etc.
+
+## Descriptive Statistics
+
+1)
+```{r create-plot-1-1, echo=FALSE}
+
+  ggplot(d1, aes(x = `Gender wage gap %`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Gender wage gap %",
+       x = "Gender wage gap %")
+  
+```
+
+2)
+```{r create-plot-1-2, echo=FALSE}
+  
+  ggplot(d1, aes(x = `Globalization index`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Globalization index",
+       x = "Globalization index")
+  
+```
+
+3)
+```{r create-plot-1-3, echo=FALSE}
+
+  ggplot(d1, aes(x = `GDP(in $)`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of GDP(in $)",
+       x = "GDP(in $)")
+  
+```
+
+4)
+```{r create-plot-1-4, echo=FALSE}
+
+  ggplot(d1, aes(x = `GDP(in $)`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of GDP(in $)",
+       x = "GDP(in $)")
+  
+```
+
+5)
+```{r create-plot-1-5, echo=FALSE}
+
+  ggplot(d1, aes(x = Population)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Population",
+       x = "Population")
+  
+```
+
+6)
+```{r create-plot-1-6, echo=FALSE}
+
+  ggplot(d1, aes(x = `% Labour force participation(Men)`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of % Labour force participation(Men)",
+       x = "% Labour force participation(Men)")
+  
+```
+
+7)
+```{r create-plot-1-7, echo=FALSE}
+
+  ggplot(d1, aes(x = `% Labour force participation(Women)`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of % Labour force participation(Women)",
+       x = "% Labour force participation(Women)")
+  
+```
+
+8)
+```{r create-plot-1-8, echo=FALSE}
+
+  ggplot(d1, aes(x = `Employment rates of women with Low education level and have atleast 1 child`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Employment rates of women with Low education level and have atleast 1 child",
+       x = "Employment rates of women with Low education level and have atleast 1 child")
+  
+```
+
+9)
+```{r create-plot-1-9, echo=FALSE}
+  ggplot(d1, aes(x = `Employment rates of women with Moderate education level and have atleast 1 child`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Employment rates of women with Moderate education level and have atleast 1 child")
+       x = ("Employment rates of women with Moderate education level and have atleast 1 child")
+  
+```
+
+10)
+```{r create-plot-1-10, echo=FALSE}
+
+  ggplot(d1, aes(x = `Employment rates of women with High education level and have atleast 1 child`)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Employment rates of women with High education level and have atleast 1 child")
+       x = ("Employment rates of women with High education level and have atleast 1 child")
+  
+```
+
+## Exploring the dataset
+
+1) Country vs Year vs Gender Wage Gap %
+
+```{r create-plot-1-11, echo=FALSE}
+g1 <- d1 %>% 
+  select(Country, Year, `Gender wage gap %`) %>% 
+  na.omit(`Gender wage gap %`)
+
+ggplot(g1)+ geom_point(aes(x=Year,y=Country, size=`Gender wage gap %`,colour=`Gender wage gap %` ,  alpha=0.8))
+```
+
+Through this graph it can be observed that South Korea has had a history of higher wage gap and it still seems to be similar. Whereas countries like US, UK, Germany, Finland, etc have consistently had  a lower wage gap. In Hungary, the gap seems to be fluctuating through the years, whereas in Colombia the gap has shown an upward trend.
+
+
+2) Country vs Year vs Men's participation in labour force
+
+```{r create-plot-1-12, echo=FALSE}
+g2 <- d1 %>% 
+  select(Country, Year, `% Labour force participation(Men)`) %>% 
+  na.omit(`% Labour force participation(Women)`)
+
+ggplot(g2)+ geom_point(aes(x=Year,y=Country, size=`% Labour force participation(Men)`,colour=`% Labour force participation(Men)` ,  alpha=0.8))
+```
+
+Through the graph, it can be observed that for most countries there had been a steady rate of participation except for Belgium and Italy where the participation seems to have somewhat reduced over time.Iceland shows the highest rate of participation whereas Greece, Italy, Hungary have a comparetively lower rates of participation.
+
+
+3) Country vs Year vs Women's participation in labour force
+
+```{r create-plot-1-13, echo=FALSE}
+g3 <- d1 %>% 
+  select(Country, Year, `% Labour force participation(Women)`) %>% 
+  na.omit(`% Labour force participation(Women)`)
+
+ggplot(g3)+ geom_point(aes(x=Year,y=Country, size=`% Labour force participation(Women)`,colour=`% Labour force participation(Women)` ,  alpha=0.8))
+```
+
+In this graph again it can be observed that for most countries there had been a steady rate of participation. Iceland and Sweden show highest rates of participation. There is a steady increase in the participation rate in Ireland, Italy and Mexico.
+
+
+4) Country vs Year vs Wage gap % vs Globalization index
+
+```{r create-plot-1-14, echo=FALSE}
+g4 <- d1 %>% 
+  select(Country, Year, `Gender wage gap %` , `Globalization index`) %>% 
+  na.omit(`Gender wage gap %`) %>%
+  na.omit(`Globalization index`)
+
+ggplot(g4)+ geom_jitter(aes(x=Year,y=Country, size=`Globalization index`,colour=`Gender wage gap %` ,  alpha=0.4))
+```
+
+South Korea and Japan show comparetively higher rates of wage gap despite of increase in Globalization Index. US, UK,Germany, Finland, Canada & Austria show moderate amount of wage gap and a a consistent increase in globalization index.
+
+
+5) Country vs Year vs Wage gap % vs GDP
+
+```{r create-plot-1-15, echo=FALSE}
+g5 <- d1 %>% 
+  select(Country, Year, `Gender wage gap %` , `GDP(in $)`) %>% 
+  na.omit(`Gender wage gap %`) %>%
+  na.omit(`GDP(in $)`)
+
+ggplot(g5)+ geom_jitter(aes(x=Year,y=Country, size=`GDP(in $)`,colour=`Gender wage gap %` ,  alpha=0.4))
+```
+The graph clearly shows a trend of decreasing wage gap with increasing GDP.
+
+
+6) Country vs Year vs Globalization index vs % Labour force participation(Women)
+
+```{r create-plot-1-16, echo=FALSE}
+g6 <- d1 %>% 
+  select(Country, Year, `Globalization index` , `% Labour force participation(Women)`) %>% 
+  na.omit(`Globalization index`) %>%
+  na.omit(`% Labour force participation(Women)`)
+
+ggplot(g6) +
+  geom_jitter(aes(x = Year, y = Country, size = `% Labour force participation(Women)`, colour =`Globalization index`, alpha=0.8)) 
+  
+```
+
+7) Country vs Year vs Globalization index vs % Labour force participation(Men)
+
+```{r create-plot-1-17, echo=FALSE}
+g7 <- d1 %>% 
+  select(Country, Year, `Globalization index` , `% Labour force participation(Men)`) %>% 
+  na.omit(`Globalization index`) %>%
+  na.omit(`% Labour force participation(Men)`)
+
+ggplot(g7) +
+  geom_jitter(aes(x = Year, y = Country, size = `% Labour force participation(Men)`, colour =`Globalization index`, alpha=0.8)) 
+  
+```
+
+
+8) Country vs Year vs Employment rates of women based on educational level and number of children vs wage gap
+
+i) Low Education level
+
+```{r create-plot-1-18, echo=FALSE}
+g8 <- d1 %>% 
+  select(Country, Year, `Employment rates of women with Low education level and have atleast 1 child` , `Gender wage gap %`) %>% 
+  na.omit(`Gender wage gap %`) %>%
+  na.omit(`Employment rates of women with Low education level and have atleast 1 child`)
+
+ggplot(g8) +
+  geom_jitter(aes(y = Year, x = `Employment rates of women with Low education level and have atleast 1 child` , size = `Gender wage gap %`, colour =Country, alpha=0.8)) 
+  
+```
+
+ii) Moderate Education level
+
+```{r create-plot-1-19, echo=FALSE}
+g9 <- d1 %>% 
+  select(Country, Year, `Employment rates of women with Moderate education level and have atleast 1 child` , `Gender wage gap %`) %>% 
+  na.omit(`Gender wage gap %`) %>%
+  na.omit(`Employment rates of women with Moderate education level and have atleast 1 child`)
+
+ggplot(g9) +
+  geom_jitter(aes(y = Year, x = `Employment rates of women with Moderate education level and have atleast 1 child` , size = `Gender wage gap %`, colour =Country, alpha=0.8)) 
+  
+```
+
+iii) High Education level
+
+```{r create-plot-1-20, echo=FALSE}
+g10 <- d1 %>% 
+  select(Country, Year, `Employment rates of women with High education level and have atleast 1 child` , `Gender wage gap %`) %>% 
+  na.omit(`Gender wage gap %`) %>%
+  na.omit(`Employment rates of women with High education level and have atleast 1 child`)
+
+ggplot(g10) +
+  geom_jitter(aes(y = Year, x = `Employment rates of women with High education level and have atleast 1 child` , size = `Gender wage gap %`, colour =Country, alpha=0.8)) 
+  
+```
+
+
+9) Country vs Year vs Employment rates of women based on educational level and number of children vs Globalization Index
+
+i) Low Education level
+
+```{r create-plot-1-21, echo=FALSE}
+g11 <- d1 %>% 
+  select(Country, Year, `Employment rates of women with Low education level and have atleast 1 child` , `Globalization index`) %>% 
+  na.omit(`Globalization index`) %>%
+  na.omit(`Employment rates of women with Low education level and have atleast 1 child`)
+
+ggplot(g11) +
+  geom_jitter(aes(y = Year, x = `Employment rates of women with Low education level and have atleast 1 child` , size = `Globalization index`, colour =Country, alpha=0.8)) 
+  
+```
+
+ii) Moderate Education level
+
+```{r create-plot-1-22, echo=FALSE}
+g12 <- d1 %>% 
+  select(Country, Year, `Employment rates of women with Moderate education level and have atleast 1 child` , `Globalization index`) %>% 
+  na.omit(`Globalization index`) %>%
+  na.omit(`Employment rates of women with Moderate education level and have atleast 1 child`)
+
+ggplot(g12) +
+  geom_jitter(aes(y = Year, x = `Employment rates of women with Moderate education level and have atleast 1 child` , size = `Globalization index`, colour =Country, alpha=0.8)) 
+  
+```
+
+iii) High Education level
+
+```{r create-plot-1-23, echo=FALSE}
+g13 <- d1 %>% 
+  select(Country, Year, `Employment rates of women with High education level and have atleast 1 child` , `Globalization index`) %>% 
+  na.omit(`Globalization index`) %>%
+  na.omit(`Employment rates of women with High education level and have atleast 1 child`)
+
+ggplot(g13) +
+  geom_jitter(aes(y = Year, x = `Employment rates of women with High education level and have atleast 1 child` , size = `Globalization index`, colour =Country, alpha=0.8)) 
+  
+```
+
+
+
+# Data Set - 2
+
+This data set gives a glimpse of what the current formal sector wage gap trends look like. With this it also provides information of other parameters like age, years of experience, occupation, department of work, etc.
+
+## Descriptive statistics
+
+1)
+```{r create-plot-1-24, echo=FALSE}
+
+  ggplot(d2, aes(x = Age)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Age",
+       x = "Age")
+  
+```
+
+2)
+```{r create-plot-1-25, echo=FALSE}
+
+  ggplot(d2, aes(x = `Years of Experience`)) +
+  geom_boxplot() +
+  labs(title = "Years of Experience",
+       x = "Years of Experience")
+  
+```
+
+3)
+```{r create-plot-1-26, echo=FALSE}
+
+  ggplot(d2, aes(x = `BasePay(in $)`)) +
+  geom_boxplot() +
+  labs(title = "BasePay(in $)",
+       x = "BasePay(in $)")
+  
+```
+
+
+## Exploring the dataset
+
+1)Gender vs Educational level
+
+```{r create-plot-1-27, echo=FALSE}
+ggplot(d2, aes(x=Education, fill=Gender)) +
+  
+  geom_bar()+
+  xlab("Education")+
+  ylab("Count")+ 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
+2) Gender vs Department of work
+
+```{r create-plot-1-28, echo=FALSE}
+ggplot(d2, aes(x=Dept, fill=Gender)) +
+  
+  geom_bar()+
+  xlab("Dept")+
+  ylab("Count")+ 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
+3) Gender vs Department of work vs Base pay
+
+```{r create-plot-1-29, echo=FALSE}
+g14 <- d2 %>%
+  select(Gender, Dept, `BasePay(in $)`) %>% 
+  na.omit(Dept) %>%
+  na.omit(`BasePay(in $)`)
+  
+  ggplot(g14)+
+    geom_jitter(aes(x=Dept, y=`BasePay(in $)`, colour=Gender))
+  
+```
+
+
+4) Gender vs Age vs Base pay
+
+```{r create-plot-1-30, echo=FALSE}
+g15 <- d2 %>%
+  select(Gender, Age, `BasePay(in $)`) %>% 
+  na.omit(Age) %>%
+  na.omit(`BasePay(in $)`)
+  
+  ggplot(g15)+
+    geom_jitter(aes(x=Age, y=`BasePay(in $)`, colour=Gender))
+  
+```
+
+
+5) Gender vs Years of Experience vs Base pay
+
+```{r create-plot-1-31, echo=FALSE}
+g16 <- d2 %>%
+  select(Gender, `Years of Experience`, `BasePay(in $)`) %>% 
+  na.omit(`Years of Experience`) %>%
+  na.omit(`BasePay(in $)`)
+  
+  ggplot(g16)+
+    geom_jitter(aes(x=`Years of Experience`, y=`BasePay(in $)`, colour=Gender))
+  
+```
+
+
+
+# Data Set - 3
+
+This data set aims to provide information about gender pay gap by race/ethnicity in 2019.
+
+## Descriptive statistics
+
+1)
+```{r create-plot-1-32, echo=FALSE}
+
+  ggplot(d3, aes(x = `2019 Female Earnings(in $)`)) +
+  geom_boxplot() +
+  labs(title = "2019 Female Earnings(in $)",
+       x = "2019 Female Earnings(in $)")
+  
+```
+
+2)
+```{r create-plot-1-33, echo=FALSE}
+
+  ggplot(d3, aes(x = `2019 Male Earnings(in $)`)) +
+  geom_boxplot() +
+  labs(title = "2019 Male Earnings(in $)",
+       x = "2019 Male Earnings(in $)")
+  
+```
+
+3)
+```{r create-plot-1-34, echo=FALSE}
+
+  ggplot(d3, aes(x = `Female Earnings as % of Male Earnings of Same Group`)) +
+  geom_boxplot() +
+  labs(title = "Female Earnings as % of Male Earnings of Same Group",
+       x = "Female Earnings as % of Male Earnings of Same Group")
+  
+```
+
+4)
+```{r create-plot-1-35, echo=FALSE}
+
+  ggplot(d3, aes(x = `Female Earnings as % of White Male Earnings`)) +
+  geom_boxplot() +
+  labs(title = "Female Earnings as % of White Male Earnings",
+       x = "Female Earnings as % of White Male Earnings")
+  
+```
+
+
+## Exploring the data set
+
+1) Racial/Ethnic Background vs 2019 Female Earnings(in $)
+
+```{r create-plot-1-36, echo=FALSE}
+g17 <- d3%>%
+  select(`Racial/Ethnic Background`,`2019 Female Earnings(in $)`) %>% 
+  group_by(`Racial/Ethnic Background`) %>% 
+  summarise(`2019 Female Earnings(in $)` = n())
+  
+
+ggplot(g17) + geom_jitter(aes(x=`2019 Female Earnings(in $)`,y=`Racial/Ethnic Background`, colour=`Racial/Ethnic Background`,  alpha=0.4))
+  
+```
+
+
+2) Racial/Ethnic Background vs 2019 Male Earnings(in $)
+
+```{r create-plot-1-37, echo=FALSE}
+g18 <- d3%>%
+  select(`Racial/Ethnic Background`,`2019 Male Earnings(in $)`) %>% 
+  group_by(`Racial/Ethnic Background`) %>% 
+  summarise(`2019 Male Earnings(in $)` = n())
+  
+
+ggplot(g18) + geom_jitter(aes(x=`2019 Male Earnings(in $)`,y=`Racial/Ethnic Background`, colour=`Racial/Ethnic Background`,  alpha=0.4))
+  
+```
+
+
+3) 
+```{r create-plot-1-38, echo=FALSE}
+g19 <- d3 %>%
+  select(`Female Earnings as % of Male Earnings of Same Group`, `Racial/Ethnic Background`, `2019 Female Earnings(in $)`) %>% 
+  na.omit(`Female Earnings as % of Male Earnings of Same Group`) %>%
+  na.omit(`Racial/Ethnic Background`)%>%
+  na.omit(`2019 Female Earnings(in $)`)
+  ggplot(g19)+
+    geom_point(aes(x=`Racial/Ethnic Background`, y=`Female Earnings as % of Male Earnings of Same Group`, size=`2019 Female Earnings(in $)`))
+  
+```
+
+
+4) 
+```{r create-plot-1-39, echo=FALSE}
+g20 <- d3 %>%
+  select(`Female Earnings as % of White Male Earnings`, `Racial/Ethnic Background`, `2019 Female Earnings(in $)`) %>% 
+  na.omit(`Female Earnings as % of White Male Earnings`) %>%
+  na.omit(`Racial/Ethnic Background`)%>%
+  na.omit(`2019 Female Earnings(in $)`)
+  ggplot(g20)+
+    geom_point(aes(x=`Racial/Ethnic Background`, y=`Female Earnings as % of White Male Earnings`, size=`2019 Female Earnings(in $)`))
+  
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

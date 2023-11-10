@@ -1,0 +1,69 @@
+.vector-icon6 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.zondiconsclose-outline5 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 36px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.purple-child {
+  border: 0;
+  position: absolute;
+  top: 62px;
+  left: 100px;
+  background-color: #d9d9d9;
+  width: 622px;
+  height: 617px;
+}
+.curabitur-vulputate-et {
+  display: block;
+}
+.lorem-ipsum-dolor-container,
+.lorem-ipsum-dolor2 {
+  margin: 0;
+  position: absolute;
+  left: 742px;
+  display: inline-block;
+}
+.lorem-ipsum-dolor-container {
+  top: 410px;
+  width: 438px;
+  height: 285px;
+}
+.lorem-ipsum-dolor2 {
+  top: 277px;
+  font-size: var(--font-size-29xl);
+  font-weight: 400;
+  font-family: var(--font-changa-one);
+  color: var(--color-white);
+  width: 353px;
+}
+.purple {
+  position: relative;
+  background-color: var(--color-violet);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+  font-family: var(--font-roboto);
+}

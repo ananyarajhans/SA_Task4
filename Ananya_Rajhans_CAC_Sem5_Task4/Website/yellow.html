@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./yellow.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="yellow">
+      <button class="zondiconsclose-outline2" id="popupzondiconscloseOutline">
+        <img class="vector-icon2" alt="" src="./assets/close.png" />
+      </button>
+      <iframe class="yellow-child"> </iframe>
+      <iframe class="yellow-item"> </iframe>
+      <iframe class="yellow-inner"> </iframe>
+      <p class="the-gender-pay-container">
+        <span class="the-gender-pay"
+          >The gender pay gap manifests as a "motherhood penalty" and a
+          "fatherhood bonus," reflecting deeply ingrained societal biases.
+          Studies indicate that mothers experience a decrease in earnings,
+          losing 4 percent for each child, while fathers enjoy a more than 6
+          percent increase in earnings after having children. Even when factors
+          like education and hours worked are considered, discrimination remains
+          a significant factor. Mothers face cultural biases, seen as less
+          committed and more distractible, resulting in harsher performance
+          standards. In contrast, fathers are perceived as stable providers. The
+          impact is most pronounced for low-income women, revealing a stark
+          economic cost for families with fewer resources.</span
+        >
+        <span class="the-gender-pay">&nbsp;</span>
+      </p>
+      <h1 class="the-motherhood-penalty">
+        “The Motherhood Penalty “ vs. “The Fatherhood Bonus”
+      </h1>
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

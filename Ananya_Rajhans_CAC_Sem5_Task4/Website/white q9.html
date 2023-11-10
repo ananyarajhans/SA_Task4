@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./white-q9.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="white-q9">
+      <button class="zondiconsclose-outline" id="popupzondiconscloseOutline">
+        <img class="vector-icon" alt="" src="./assets/close.png" />
+      </button>
+      <iframe class="white-q9-child"> </iframe>
+      <iframe class="white-q9-item"> </iframe>
+      <p class="women-of-color">
+        Women of color, on average, experience a larger pay gap compared to
+        white women. This means that not only do women, in general, earn less
+        than men, but within the category of women, there are further
+        disparities based on race and ethnicity. For instance, Black women and
+        Hispanic women tend to earn less than white women for similar work. This
+        intersectional aspect of the gender pay gap highlights the complex and
+        interconnected nature of economic inequality. It is important to address
+        both gender and racial disparities in order to achieve true equity in
+        the workforce.
+      </p>
+      <h1 class="how-does-race">
+        How Does Race Impact Earnings and Opportunities?
+      </h1>
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

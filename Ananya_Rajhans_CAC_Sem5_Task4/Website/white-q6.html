@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./white-q6.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="white-q6">
+      <button class="zondiconsclose-outline6" id="popupzondiconscloseOutline">
+        <img class="vector-icon7" alt="" src="./assets/close.png" />
+      </button>
+      <img class="white-q6-child" alt="" src="./public/rectangle-163@2x.png" />
+
+      <p class="occupational-segregation-desp-container">
+        <span class="occupational-segregation">
+          <span class="occupational-segregation1"
+            >Occupational Segregation:</span
+          >
+        </span>
+        <span class="occupational-segregation">
+          <span
+            >Despite educational achievements, occupational segregation remains
+            a challenge. Women may be concentrated in fields traditionally
+            associated with lower pay, contributing to persistent
+            disparities.</span
+          >
+        </span>
+        <span class="occupational-segregation">
+          <span class="occupational-segregation1">&nbsp;</span>
+        </span>
+        <span class="occupational-segregation">
+          <span class="occupational-segregation1">Negotiation Skills:</span>
+        </span>
+        <span class="occupational-segregation">
+          <span
+            >Education can enhance individuals' negotiation skills, potentially
+            influencing salary negotiations. However, studies suggest that women
+            may still face challenges in negotiating equal pay, possibly due to
+            societal expectations and biases.</span
+          >
+        </span>
+        <span class="occupational-segregation">
+          <span>&nbsp;</span>
+        </span>
+        <span class="occupational-segregation">
+          <span class="occupational-segregation1">Glass Ceiling Effect:</span>
+        </span>
+        <span class="occupational-segregation">
+          <span
+            >The "glass ceiling" phenomenon, where women face barriers to
+            advancement in higher-paying positions, can impact the link between
+            education and equal pay. Breaking through these barriers may require
+            additional efforts beyond educational attainment.</span
+          >
+        </span>
+        <span class="occupational-segregation">
+          <span>&nbsp;</span>
+        </span>
+        <span class="occupational-segregation">
+          <span class="occupational-segregation1"
+            >Bias and Discrimination:</span
+          >
+        </span>
+        <span class="occupational-segregation">
+          <span
+            >Despite education, gender bias and discrimination persist in the
+            workplace. Stereotypes and preconceived notions about women's
+            capabilities can influence hiring decisions and salary offers,
+            contributing to unequal pay.</span
+          >
+        </span>
+        <span class="occupational-segregation">
+          <span>&nbsp;</span>
+        </span>
+      </p>
+      <h1 class="what-is-the2">
+        What is the Link Between Education and Equal Pay?
+      </h1>
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

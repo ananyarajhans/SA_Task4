@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./green-q1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="green-q1">
+      <button class="close1" id="popupclose">
+        <img class="vector-icon9" alt="" src="./assets/close.png" />
+      </button>
+      <p class="in-the-early">
+        In the early to mid-20th century, the gender wage gap was deeply
+        entrenched in societies across the globe. There were relatively few
+        women in the workforce, primarily due to cultural and societal norms
+        that dictated that a woman's primary role was within the home. Those who
+        did enter the workforce often faced barriers in terms of educational
+        opportunities. Women were often directed towards more menial roles, such
+        as assembly line workers or personal secretaries, and were largely
+        absent from professional fields. The prevailing belief was that women
+        were inherently less capable than men, both intellectually and
+        physically, reinforcing stereotypes that limited their access to
+        education and professional opportunities. These cultural norms
+        perpetuated the idea that women should focus on raising children and
+        maintaining households, rather than pursuing careers or positions of
+        power.
+      </p>
+      <h1 class="how-has-society1">
+        How Has Society Viewed Women's Earnings Over Time?
+      </h1>
+      <div class="oouispeech-bubble-ltr">
+        <img class="vector-icon10" alt="" src="./public/vector1.svg" />
+
+        <img class="vector-icon11" alt="" src="./public/vector2.svg" />
+
+        <h1 class="women-should-raise">“Women should raise children”</h1>
+      </div>
+      <div class="oouispeech-bubble-ltr1">
+        <img class="vector-icon10" alt="" src="./public/vector3.svg" />
+
+        <img class="vector-icon11" alt="" src="./public/vector4.svg" />
+
+        <h1 class="women-cant-hold">“Women can’t hold power”</h1>
+      </div>
+      <div class="oouispeech-bubble-ltr2">
+        <img class="vector-icon14" alt="" src="./public/vector1.svg" />
+
+        <img class="vector-icon15" alt="" src="./public/vector2.svg" />
+
+        <h1 class="feminine-jobs">“Feminine” Jobs</h1>
+      </div>
+      <div class="oouispeech-bubble-ltr3">
+        <img class="vector-icon14" alt="" src="./public/vector1.svg" />
+
+        <img class="vector-icon15" alt="" src="./public/vector2.svg" />
+
+        <h1 class="women-should-be">“Women should be homemakers”</h1>
+      </div>
+      <div class="oouispeech-bubble-ltr4">
+        <img class="vector-icon10" alt="" src="./public/vector5.svg" />
+
+        <img class="vector-icon11" alt="" src="./public/vector6.svg" />
+      </div>
+      <h1 class="women-are-less">“Women are less intelligent”</h1>
+    </div>
+
+    <script>
+      var popupclose = document.getElementById("popupclose");
+      if (popupclose) {
+        popupclose.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

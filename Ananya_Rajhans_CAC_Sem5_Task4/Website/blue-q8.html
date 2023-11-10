@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./blue-q8.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="blue-q8">
+      <button class="zondiconsclose-outline4" id="popupzondiconscloseOutline">
+        <img class="vector-icon5" alt="" src="./assets/close.png" />
+      </button>
+      <p class="these-disparities-often">
+        These disparities often result from a combination of factors such as
+        skill levels required, demand for specific expertise, and negotiation
+        power. For example, within the technology sector, executive roles may
+        command substantially higher salaries compared to entry-level positions.
+        Similarly, the financial industry may see significant gaps between
+        high-paying roles like investment banking and lower-paying
+        administrative positions.
+      </p>
+      <h1 class="which-industries-exhibit1">
+        Which Industries Exhibit Extreme Wage Disparities?
+      </h1>
+      <img class="large-gpg-icon" alt="" src="./public/large-gpg@2x.png" />
+
+      <img class="small-gpg-icon" alt="" src="./public/small-gpg@2x.png" />
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

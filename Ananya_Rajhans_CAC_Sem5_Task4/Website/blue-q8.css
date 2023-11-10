@@ -1,0 +1,70 @@
+.vector-icon5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.zondiconsclose-outline4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 36px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.these-disparities-often,
+.which-industries-exhibit1 {
+  margin: 0;
+  position: absolute;
+  left: 813px;
+  display: inline-block;
+}
+.these-disparities-often {
+  top: 467px;
+  width: 362px;
+  height: 188px;
+}
+.which-industries-exhibit1 {
+  top: 385px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--font-changa-one);
+  width: 367px;
+}
+.large-gpg-icon,
+.small-gpg-icon {
+  position: absolute;
+  top: 375px;
+  left: 100px;
+  width: 652px;
+  height: 256px;
+  object-fit: cover;
+}
+.small-gpg-icon {
+  top: 105px;
+  width: 654px;
+  height: 259px;
+}
+.blue-q8 {
+  position: relative;
+  background-color: var(--color-cornflowerblue);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

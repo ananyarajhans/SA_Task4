@@ -1,0 +1,72 @@
+.vector-icon4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.close,
+.div {
+  border: 0;
+  position: absolute;
+}
+.close {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  top: 32px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.div {
+  top: 58px;
+  left: 100px;
+  width: 713px;
+  height: 617px;
+  background-image: url(./public/div@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.the-impact-of {
+  display: block;
+}
+.does-globalization-close,
+.the-impact-of-container {
+  margin: 0;
+  position: absolute;
+  left: 833px;
+  display: inline-block;
+}
+.the-impact-of-container {
+  top: 422px;
+  width: 347px;
+  height: 264px;
+}
+.does-globalization-close {
+  top: 289px;
+  font-size: var(--font-size-13xl);
+  font-weight: 400;
+  font-family: var(--font-changa-one);
+  width: 370px;
+}
+.green-q4 {
+  position: relative;
+  background-color: var(--color-mediumaquamarine-100);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

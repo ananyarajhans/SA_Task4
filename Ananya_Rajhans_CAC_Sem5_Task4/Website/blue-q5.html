@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./blue-q5.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="blue-q5">
+      <button class="zondiconsclose-outline3" id="popupzondiconscloseOutline">
+        <img class="vector-icon3" alt="" src="./assets/close.png" />
+      </button>
+      <p class="gender-driven-industries-are">
+        Gender-driven industries are those characterized by a significant
+        concentration of one gender in specific professions or sectors.
+        Historically, societal norms and stereotypes have played a pivotal role
+        in shaping these patterns. For instance, industries like nursing,
+        teaching, and administrative roles have been predominantly associated
+        with women, while sectors like engineering, technology, and construction
+        have been male-dominated. Such gender-driven divisions contribute to the
+        perpetuation of the gender pay gap, as certain professions traditionally
+        held by women tend to have lower average salaries compared to
+        male-dominated fields.
+      </p>
+      <h1 class="what-are-gender">What are gender driven industries?</h1>
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

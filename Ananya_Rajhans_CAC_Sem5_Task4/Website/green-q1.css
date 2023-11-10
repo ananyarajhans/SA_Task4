@@ -1,0 +1,211 @@
+.close1,
+.vector-icon9 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon9 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.close1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 32px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+}
+.how-has-society1,
+.in-the-early {
+  margin: 0;
+  position: absolute;
+  color: var(--color-white);
+  display: inline-block;
+}
+.in-the-early {
+  top: 244px;
+  left: 248px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-roboto);
+  text-align: left;
+  width: 806px;
+  height: 275px;
+}
+.how-has-society1 {
+  top: 181px;
+  left: 226px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  width: 828px;
+}
+.vector-icon10,
+.vector-icon11 {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  top: 70%;
+  right: 70%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon11 {
+  height: 80%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 20%;
+}
+.women-should-raise {
+  margin: 0;
+  position: absolute;
+  width: 76.06%;
+  top: 15.43%;
+  left: 11.7%;
+  font-size: inherit;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-family: inherit;
+}
+.oouispeech-bubble-ltr {
+  position: absolute;
+  top: 470px;
+  left: 29px;
+  width: 188px;
+  height: 188px;
+  overflow: hidden;
+  font-size: var(--font-size-5xl);
+}
+.women-cant-hold {
+  margin: 0;
+  position: absolute;
+  width: 73.17%;
+  top: 21.81%;
+  left: 13.59%;
+  font-size: inherit;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-family: inherit;
+}
+.oouispeech-bubble-ltr1,
+.vector-icon14,
+.vector-icon15 {
+  position: absolute;
+  top: 557px;
+  left: 409px;
+  width: 287px;
+  height: 188px;
+  overflow: hidden;
+}
+.vector-icon14,
+.vector-icon15 {
+  height: 30%;
+  width: 30%;
+  top: 70%;
+  right: 100%;
+  bottom: 0;
+  left: -30%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon15 {
+  height: 80%;
+  width: 100%;
+  top: 0;
+  bottom: 20%;
+  left: -100%;
+}
+.feminine-jobs {
+  margin: 0;
+  position: absolute;
+  width: 76.06%;
+  top: 23.4%;
+  left: 88.3%;
+  font-size: inherit;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-family: inherit;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.oouispeech-bubble-ltr2 {
+  top: 519px;
+  left: 1088px;
+  width: 188px;
+  height: 188px;
+  overflow: hidden;
+  font-size: var(--font-size-5xl);
+}
+.oouispeech-bubble-ltr2,
+.oouispeech-bubble-ltr3,
+.women-should-be {
+  position: absolute;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.women-should-be {
+  margin: 0;
+  width: 85.11%;
+  top: 23.94%;
+  left: 92.55%;
+  font-size: inherit;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-family: inherit;
+}
+.oouispeech-bubble-ltr3 {
+  top: 282px;
+  left: 1264px;
+  width: 188px;
+  height: 188px;
+  overflow: hidden;
+  font-size: var(--font-size-xl);
+}
+.oouispeech-bubble-ltr4 {
+  position: absolute;
+  top: 181px;
+  left: 44px;
+  width: 137px;
+  height: 137px;
+  overflow: hidden;
+}
+.women-are-less {
+  margin: 0;
+  position: absolute;
+  top: 198px;
+  left: 57px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-family: inherit;
+  width: 111px;
+}
+.green-q1 {
+  position: relative;
+  background-color: var(--color-mediumaquamarine-100);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray);
+  font-family: var(--font-changa-one);
+}

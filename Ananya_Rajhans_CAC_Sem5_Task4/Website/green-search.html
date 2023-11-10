@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./green-search.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="green-search">
+      <button class="close2" id="popupclose">
+        <img class="vector-icon20" alt="" src="./assets/close.png" />
+      </button>
+      <p class="the-gender-wage-container">
+        <span class="the-gender-wage"
+          >The gender wage gap refers to the difference between the average
+          earnings of men and women in the workforce. It is typically expressed
+          as a percentage of men's earnings, highlighting the disparity in
+          income between genders.
+        </span>
+        <span class="the-gender-wage"
+          >This gap exists across various industries, occupations, and
+          educational levels and is influenced by a combination of factors such
+          as discrimination, occupational segregation, differences in work
+          experience, and societal expectations. The gender wage gap is a
+          critical issue as it reflects and perpetuates gender inequality,
+          limiting economic opportunities for women and contributing to broader
+          socio-economic disparities.</span
+        >
+      </p>
+      <h1 class="lorem-ipsum-dolor3">Lorem ipsum dolor sit amet ?</h1>
+    </div>
+
+    <script>
+      var popupclose = document.getElementById("popupclose");
+      if (popupclose) {
+        popupclose.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

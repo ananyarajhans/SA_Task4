@@ -1,0 +1,71 @@
+.vector-icon1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.zondiconsclose-outline1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 36px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.purple-q3-child {
+  position: absolute;
+  top: 14px;
+  left: 100px;
+  width: 622px;
+  height: 617px;
+  object-fit: cover;
+}
+.lifetime-earnings {
+  font-weight: 900;
+  font-family: var(--font-roboto);
+}
+.lifetime-earnings-over-a-pers {
+  display: block;
+}
+.lifetime-earnings-over-container,
+.lorem-ipsum-dolor {
+  margin: 0;
+  position: absolute;
+  left: 742px;
+  display: inline-block;
+}
+.lifetime-earnings-over-container {
+  top: 251px;
+  width: 438px;
+  height: 363px;
+}
+.lorem-ipsum-dolor {
+  top: 118px;
+  font-size: var(--font-size-29xl);
+  font-weight: 400;
+  font-family: var(--font-changa-one);
+  width: 353px;
+}
+.purple-q3 {
+  position: relative;
+  background-color: var(--color-violet);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

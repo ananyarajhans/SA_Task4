@@ -1,0 +1,82 @@
+.vector-icon2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.zondiconsclose-outline2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 32px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.yellow-child,
+.yellow-inner,
+.yellow-item {
+  border: 0;
+  position: absolute;
+  top: 136px;
+  left: 100px;
+  width: 334px;
+  height: 332px;
+  background-image: url(./public/rectangle-162@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.yellow-inner,
+.yellow-item {
+  left: 473px;
+  background-image: url(./public/rectangle-171@3x.png);
+}
+.yellow-inner {
+  left: 846px;
+  background-image: url(./public/rectangle-18@3x.png);
+}
+.the-gender-pay {
+  display: block;
+}
+.the-gender-pay-container,
+.the-motherhood-penalty {
+  margin: 0;
+  position: absolute;
+  left: 100px;
+  display: inline-block;
+}
+.the-gender-pay-container {
+  top: 559px;
+  width: 1008px;
+  height: 113px;
+}
+.the-motherhood-penalty {
+  top: 497px;
+  font-size: var(--font-size-21xl);
+  font-weight: 400;
+  font-family: var(--font-changa-one);
+  width: 1080px;
+}
+.yellow {
+  position: relative;
+  background-color: var(--color-goldenrod);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

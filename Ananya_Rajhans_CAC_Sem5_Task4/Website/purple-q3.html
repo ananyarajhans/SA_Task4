@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./purple-q3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="purple-q3">
+      <button class="zondiconsclose-outline1" id="popupzondiconscloseOutline">
+        <img class="vector-icon1" alt="" src="./assets/close.png" />
+      </button>
+      <img class="purple-q3-child" alt="" src="./public/rectangle-161@2x.png" />
+
+      <p class="lifetime-earnings-over-container">
+        <span class="lifetime-earnings-over-a-pers">
+          <span class="lifetime-earnings">Lifetime Earnings:</span>
+          <span>
+            Over a person's career, the gender pay gap can widen with age. This
+            is because women may face obstacles in career progression, such as
+            taking breaks for caregiving responsibilities, which can lead to
+            lower lifetime earnings compared to their male counterparts.
+          </span>
+        </span>
+        <span class="lifetime-earnings-over-a-pers">
+          <span class="lifetime-earnings">Entry-Level Positions: </span>
+          <span
+            >Younger women may face a narrower pay gap when starting their
+            careers, as they may be more likely to enter the workforce with
+            similar qualifications and expectations as their male peers.
+          </span>
+        </span>
+        <span class="lifetime-earnings-over-a-pers">
+          <span class="lifetime-earnings">Promotions and Advancement:</span>
+          <span>
+            As employees progress in their careers, the gender pay gap may
+            widen. This can be due to factors like gender bias in promotions,
+            lack of access to high-level positions, and the tendency for men to
+            negotiate higher salaries.
+          </span>
+        </span>
+        <span class="lifetime-earnings-over-a-pers">
+          <span class="lifetime-earnings">Ageism and Retirement:</span>
+          <span>
+            Both men and women may face age-related challenges in the workforce.
+            However, older women may face additional barriers due to a
+            combination of ageism and gender bias, which can lead to lower pay
+            and reduced opportunities.</span
+          >
+        </span>
+      </p>
+      <h1 class="lorem-ipsum-dolor">Lorem ipsum dolor sit amet ?</h1>
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

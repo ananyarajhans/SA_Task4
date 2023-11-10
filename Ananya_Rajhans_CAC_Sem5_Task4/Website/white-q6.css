@@ -1,0 +1,70 @@
+.vector-icon7 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.zondiconsclose-outline6 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 32px;
+  left: 1203px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.white-q6-child {
+  position: absolute;
+  top: 51px;
+  left: 100px;
+  width: 622px;
+  height: 617px;
+  object-fit: cover;
+}
+.occupational-segregation1 {
+  font-weight: 900;
+}
+.occupational-segregation {
+  display: block;
+}
+.occupational-segregation-desp-container,
+.what-is-the2 {
+  margin: 0;
+  position: absolute;
+  left: 742px;
+  display: inline-block;
+}
+.occupational-segregation-desp-container {
+  top: 283px;
+  width: 438px;
+  height: 380px;
+}
+.what-is-the2 {
+  top: 165px;
+  font-size: var(--font-size-13xl);
+  font-weight: 400;
+  font-family: var(--font-changa-one);
+  width: 353px;
+}
+.white-q6 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 1280px;
+  height: 732px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+  font-family: var(--font-roboto);
+}

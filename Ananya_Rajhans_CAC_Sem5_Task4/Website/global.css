@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  /* fonts */
+  --font-changa-one: "Changa One";
+  --font-roboto: Roboto;
+  --font-josefin-sans: "Josefin Sans";
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+  --font-size-base: 16px;
+  --font-size-29xl: 48px;
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+  --font-size-sm: 14px;
+  --font-size-3xl: 22px;
+  --font-size-5xl: 24px;
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray: #202328;
+  --color-violet: #f386ff;
+  --color-goldenrod: #fdd258;
+  --color-cornflowerblue: #4b9fff;
+  --color-mediumaquamarine-100: #00c399;
+  --color-black: #000;
+
+  /* Paddings */
+  --padding-xl: 20px;
+
+  /* Border radiuses */
+  --br-21xl: 40px;
+}

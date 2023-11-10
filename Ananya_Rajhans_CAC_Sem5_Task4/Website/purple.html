@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./purple.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Changa One:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="purple">
+      <button class="zondiconsclose-outline5" id="popupzondiconscloseOutline">
+        <img class="vector-icon6" alt="" src="./assets/close.png" />
+      </button>
+      <iframe class="purple-child"> </iframe>
+      <p class="lorem-ipsum-dolor-container">
+        <span class="curabitur-vulputate-et"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          interdum a magna a varius. Duis vel orci velit. Donec in arcu non sem
+          posuere congue ornare vitae ex. Aenean auctor est in rhoncus
+          pellentesque. Vivamus est erat, tincidunt at metus quis, vestibulum
+          fringilla ipsum. Fusce sit amet dolor sit amet sem accumsan luctus a a
+          orci. Nam nisl justo, dapibus non tincidunt vel, eleifend sed mauris.
+          Sed tempor ipsum vehicula, dignissim quam sit amet, euismod dui. Nam
+          quis erat eu justo mattis lacinia. Donec ligula metus, auctor eu nulla
+          vel, tempus auctor metus. Mauris malesuada lacus nec ipsum volutpat,
+          ac eleifend velit feugiat.</span
+        >
+        <span class="curabitur-vulputate-et">&nbsp;</span>
+        <span class="curabitur-vulputate-et"
+          >Curabitur vulputate et augue at venenatis. In arcu urna, accumsan ut
+          porttitor a, blandit sed lorem. Interdum et malesuada fames ac ante
+          ipsum primis in faucibus. Donec convallis imperdiet sapien. Morbi nibh
+          magna, fringilla ut luctus at, mattis sit amet nunc. Vivamus diam
+          ante, laoreet non enim eget, tempus malesuada diam. Sed velit elit,
+          rutrum porta hendrerit vel, rhoncus nec leo.</span
+        >
+        <span class="curabitur-vulputate-et">&nbsp;</span>
+      </p>
+      <h1 class="lorem-ipsum-dolor2">Lorem ipsum dolor sit amet ?</h1>
+    </div>
+
+    <script>
+      var popupzondiconscloseOutline = document.getElementById(
+        "popupzondiconscloseOutline"
+      );
+      if (popupzondiconscloseOutline) {
+        popupzondiconscloseOutline.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
