@@ -424,14 +424,14 @@
     left: 100px;
     width: 530px;
     height: 398px;
-    background-image: url(./public/rectangle-16@3x.png);
+    background-image: url(./assets/race\ male.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
   }
   .white-q9-item {
     left: 650px;
-    background-image: url(./public/rectangle-17@3x.png);
+    background-image: url(./assets/race\ femlae.png);
   }
   .how-does-race,
   .women-of-color {
@@ -491,11 +491,11 @@
   }
   .purple-q3-child {
     position: absolute;
-    top: 14px;
-    left: 100px;
-    width: 622px;
-    height: 617px;
-    object-fit: cover;
+    top: 100px;
+    left: 80px;
+    width: 50%;
+    height: 60%;
+    
   }
   .lifetime-earnings {
     font-weight: 900;
@@ -512,12 +512,12 @@
     display: inline-block;
   }
   .lifetime-earnings-over-container {
-    top: 251px;
+    top: 260px;
     width: 438px;
     height: 363px;
   }
   .lorem-ipsum-dolor {
-    top: 118px;
+    top: 90px;
     font-size: var(--font-size-29xl);
     font-weight: 400;
     font-family: var(--font-changa-one);
@@ -560,6 +560,10 @@
     height: 38px;
     overflow: hidden;
   }
+
+
+
+
   .yellow-child,
   .yellow-inner,
   .yellow-item {
@@ -569,7 +573,7 @@
     left: 100px;
     width: 334px;
     height: 332px;
-    background-image: url(./public/rectangle-162@3x.png);
+    background-image: url(./assets/low\ education\ level.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -577,29 +581,30 @@
   .yellow-inner,
   .yellow-item {
     left: 473px;
-    background-image: url(./public/rectangle-171@3x.png);
+    background-image: url(./assets/moderate\ edu\ lvl.png);
   }
   .yellow-inner {
     left: 846px;
-    background-image: url(./public/rectangle-18@3x.png);
+    background-image: url(./assets/high\ edu\ lvl.png);
   }
   .the-gender-pay {
-    display: block;
+    
+    top: 400px;
   }
   .the-gender-pay-container,
   .the-motherhood-penalty {
     margin: 0;
     position: absolute;
     left: 100px;
-    display: inline-block;
+    
   }
   .the-gender-pay-container {
-    top: 559px;
+    top: 535px;
     width: 1008px;
     height: 113px;
   }
   .the-motherhood-penalty {
-    top: 497px;
+    top: 485px;
     font-size: var(--font-size-21xl);
     font-weight: 400;
     font-family: var(--font-changa-one);
@@ -704,12 +709,11 @@
   .div {
     top: 58px;
     left: 100px;
-    width: 713px;
-    height: 617px;
-    background-image: url(./public/div@3x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+   max-width: 100%;
+   max-height: 100%;
+    
+    
+    
   }
   .the-impact-of {
     display: block;
@@ -722,12 +726,12 @@
     display: inline-block;
   }
   .the-impact-of-container {
-    top: 422px;
+    top: 350px;
     width: 347px;
     height: 264px;
   }
   .does-globalization-close {
-    top: 289px;
+    top: 230px;
     font-size: var(--font-size-13xl);
     font-weight: 400;
     font-family: var(--font-changa-one);
@@ -881,8 +885,8 @@
     max-width: 90%;
     max-height: 90%;
     text-align: left;
-    font-size: var(--font-size-sm);
-    color: var(--color-gray);
+    font-size: var(--font-size-base);
+    color: var(--color-white);
     font-family: var(--font-roboto);
   }
   .vector-icon7 {
@@ -911,11 +915,11 @@
   }
   .white-q6-child {
     position: absolute;
-    top: 51px;
-    left: 100px;
-    width: 622px;
-    height: 617px;
-    object-fit: cover;
+    top: 150px;
+    left: 70px;
+    width: 50%;
+    height:60%;
+    
   }
   .occupational-segregation1 {
     font-weight: 900;
@@ -931,12 +935,12 @@
     display: inline-block;
   }
   .occupational-segregation-desp-container {
-    top: 283px;
+    top: 273px;
     width: 438px;
     height: 380px;
   }
   .what-is-the2 {
-    top: 165px;
+    top: 150px;
     font-size: var(--font-size-13xl);
     font-weight: 400;
     font-family: var(--font-changa-one);
@@ -949,7 +953,7 @@
     height: 732px;
     overflow: hidden;
     max-width: 90%;
-    max-height: 90%;
+    max-height: 95%;
     text-align: left;
     font-size: var(--font-size-sm);
     color: var(--color-gray);
@@ -987,18 +991,94 @@
     height: 617px;
     object-fit: cover;
   }
-  .early-to-mid-20th {
+  
+  .early-to-mid-20th-century1 {
+    margin-bottom: 0;
+    left: 785px;
+    top: 148px;
+    width: 377px;
     font-weight: 900;
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
   }
-  .early-to-mid-20th-century {
-    display: block;
+
+  .early-to-mid-20th-century2 {
+    margin-bottom: 0;
+    left: 785px;
+    top: 285px;
+    width: 377px;
+    font-weight: 900;
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
   }
+
+  .early-to-mid-20th-century3 {
+    margin-bottom: 0;
+    left: 785px;
+    top: 430px;
+    width: 377px;
+    font-weight: 900;
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
+  }
+
+  .early-to-mid-20th-century4 {
+    margin-bottom: 0;
+    left: 785px;
+    top: 570px;
+    width: 377px;
+    font-weight: 900;
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
+  }
+  
+
   .in-the-early-to-mid-20th-centu1 {
     margin-bottom: 0;
-  }
-  .in-the-early-to-mid-20th-centu {
-    margin: 0;
+    left: 803px;
+    top: 152px;
+    width: 377px;
+    
     padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
+  }
+
+  .in-the-early-to-mid-20th-centu2 {
+    margin-bottom: 0;
+    left: 803px;
+    top: 290px;
+    width: 377px;
+    
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
+  }
+
+  .in-the-early-to-mid-20th-centu3 {
+    margin-bottom: 0;
+    left: 803px;
+    top: 440px;
+    width: 377px;
+    
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
+  }
+
+  .in-the-early-to-mid-20th-centu4 {
+    margin-bottom: 0;
+    left: 803px;
+    top: 580px;
+    width: 377px;
+    
+    padding-left: var(--padding-xl);
+    position: absolute;
+    display: inline-block;
   }
   .early-to-mid-20th-container,
   .how-has-the1 {
@@ -1006,12 +1086,7 @@
     position: absolute;
     display: inline-block;
   }
-  .early-to-mid-20th-container {
-    top: 146px;
-    left: 803px;
-    width: 377px;
-    height: 529px;
-  }
+  
   .how-has-the1 {
     top: 58px;
     left: 742px;
@@ -1033,8 +1108,8 @@
     width: 1280px;
     height: 732px;
     overflow: hidden;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 95%;
+    max-height: 100%;
     text-align: left;
     font-size: inherit;
     color: var(--color-white);
@@ -1089,38 +1164,44 @@
     font-family: inherit;
     width: 828px;
   }
-  .vector-icon10,
-  .vector-icon11 {
-    position: absolute;
-    height: 30%;
-    width: 30%;
+  .vector-icon10 {
+    
+    height: 100%;
+    width: 100%;
     top: 70%;
     right: 70%;
     bottom: 0;
     left: 0;
     max-width: 100%;
-    overflow: hidden;
     max-height: 100%;
   }
   .vector-icon11 {
+    
     height: 80%;
     width: 100%;
     top: 0;
     right: 0;
-    bottom: 20%;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    
+    max-height: 100%;
   }
-  .women-should-raise {
-    margin: 0;
-    position: absolute;
-    width: 76.06%;
-    top: 15.43%;
-    left: 11.7%;
-    font-size: inherit;
-    display: inline-block;
-    font-style: italic;
-    font-weight: 400;
-    font-family: inherit;
+
+  .vector-icon12 {
+    
+    height: 80%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    
+    left: 0;
+    max-width: 100%;
+    
+    max-height: 100%;
   }
+
+ 
   .oouispeech-bubble-ltr {
     position: absolute;
     top: 470px;
@@ -1130,27 +1211,14 @@
     overflow: hidden;
     font-size: var(--font-size-5xl);
   }
-  .women-cant-hold {
-    margin: 0;
+  
+  .oouispeech-bubble-ltr1 {
     position: absolute;
-    width: 73.17%;
-    top: 21.81%;
-    left: 13.59%;
-    font-size: inherit;
-    display: inline-block;
-    font-style: italic;
-    font-weight: 400;
-    font-family: inherit;
-  }
-  .oouispeech-bubble-ltr1,
-  .vector-icon14,
-  .vector-icon15 {
-    position: absolute;
-    top: 557px;
+    top: 550px;
     left: 409px;
-    width: 287px;
-    height: 188px;
-    overflow: hidden;
+    width: 250px;
+    height: 150px;
+    
   }
   .vector-icon14,
   .vector-icon15 {
@@ -1170,49 +1238,25 @@
     bottom: 20%;
     left: -100%;
   }
-  .feminine-jobs {
-    margin: 0;
-    position: absolute;
-    width: 76.06%;
-    top: 23.4%;
-    left: 88.3%;
-    font-size: inherit;
-    display: inline-block;
-    font-style: italic;
-    font-weight: 400;
-    font-family: inherit;
-    transform: rotate(180deg);
-    transform-origin: 0 0;
-  }
+  
   .oouispeech-bubble-ltr2 {
     top: 519px;
-    left: 1088px;
-    width: 188px;
-    height: 188px;
-    overflow: hidden;
+    left: 850px;
+    width: 400px;
+    height: 400px;
+    
     font-size: var(--font-size-5xl);
   }
   .oouispeech-bubble-ltr2,
   .oouispeech-bubble-ltr3,
   .women-should-be {
     position: absolute;
-    transform: rotate(180deg);
-    transform-origin: 0 0;
+    
   }
-  .women-should-be {
-    margin: 0;
-    width: 85.11%;
-    top: 23.94%;
-    left: 92.55%;
-    font-size: inherit;
-    display: inline-block;
-    font-style: italic;
-    font-weight: 400;
-    font-family: inherit;
-  }
+  
   .oouispeech-bubble-ltr3 {
     top: 282px;
-    left: 1264px;
+    left: 1070px;
     width: 188px;
     height: 188px;
     overflow: hidden;
@@ -1226,18 +1270,7 @@
     height: 137px;
     overflow: hidden;
   }
-  .women-are-less {
-    margin: 0;
-    position: absolute;
-    top: 198px;
-    left: 57px;
-    font-size: var(--font-size-xl);
-    display: inline-block;
-    font-style: italic;
-    font-weight: 400;
-    font-family: inherit;
-    width: 111px;
-  }
+  
   .green-q1 {
     position: relative;
     background-color: var(--color-mediumaquamarine-100);
@@ -1279,10 +1312,32 @@
   .the-gender-wage {
     display: block;
   }
+
+  .the-gender-wage-gap {
+    margin: 0;
+    position: absolute;
+    top: 273px;
+    left: 328px;
+    display: inline-block;
+    width: 624px;
+    height: 275px;
+    --font-roboto: Roboto;
+    --color-white: #fff;
+  }
   .the-gender-wage-container {
     margin: 0;
     position: absolute;
     top: 273px;
+    left: 328px;
+    display: inline-block;
+    width: 624px;
+    height: 275px;
+  }
+
+  .the-gender-wage-container-again {
+    margin: 0;
+    position: absolute;
+    top: 200px;
     left: 328px;
     display: inline-block;
     width: 624px;
@@ -1312,5 +1367,14 @@
     font-size: var(--font-size-lg);
     color: var(--color-white);
     font-family: var(--font-roboto);
+  }
+  
+
+  .conclusion {
+    text-align: center;
+    top: 800px;
+    width: 933px;
+    height: 132px;
+
   }
   
